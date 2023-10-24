@@ -6,11 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Spring Security Example</title>
-<!--    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">-->
 </head>
 <body>
 <div class="container">
-        <h2 class="form-signin-heading">Welcome to Huong Dan Java, please login</h2>
         <div th:if="${param.error}" class="alert alert-danger">
             Invalid username and password.
         </div>

@@ -21,7 +21,7 @@ public class UserSecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginProcessingUrl("/user_login")
                 .usernameParameter("username")
                 .passwordParameter("password")
-                .defaultSuccessUrl("/home")
+                .defaultSuccessUrl("/home1")
                 .failureUrl("/login?error=true")
                 .permitAll()
 

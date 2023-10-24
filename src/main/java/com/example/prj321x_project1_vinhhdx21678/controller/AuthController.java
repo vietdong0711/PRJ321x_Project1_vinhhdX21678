@@ -7,15 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AuthController {
 
+
+
     @GetMapping("/login")
     public String loginUser() {
         return "login";
     }
 
-    @GetMapping("home")
+    @GetMapping("home11")
     public String hello(ModelMap model) {
-//        model.addAttribute("hello", "Hello Đồng");
-        return "hello";
+//        model.addAttribute("categories", );
+        return "home";
     }
 
     @GetMapping("admin/login")
@@ -26,6 +28,6 @@ public class AuthController {
     @GetMapping("admin/home")
     public String helloAdmin(ModelMap model) {
 //        model.addAttribute("hello", "Hello Đồng");
-        return "admin/hello";
+        return "admin/account";
     }
 }
